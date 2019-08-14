@@ -5,7 +5,7 @@ jobs:
     steps:
       - checkout
       - attach-workspace:
-        at: tmp/workspace
+          at: tmp/workspace
       - run:
           name: The First test
           command: 
@@ -21,7 +21,7 @@ jobs:
       - image: circleci/openjdk:8-jdk
     steps:
       - attach-workspace: 
-        at: .
+          at: .
       - run:
           name: The First build
           command: 
