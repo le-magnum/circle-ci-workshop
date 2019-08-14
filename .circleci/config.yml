@@ -9,7 +9,7 @@ jobs:
         command: 
           gradle test
       - store_test_results:
-        path: build/test-results
+          path: build/test-results
   package:
     docker:
       - image: circleci/openjdk:8-jdk
